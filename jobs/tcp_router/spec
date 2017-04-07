@@ -27,6 +27,8 @@ properties:
     default: "1m"
   tcp_router.oauth_secret:
     description: "OAuth client secret used to obtain token for Routing API from UAA."
+  tcp_router.router_group:
+    description: "Required property. TCP Router will only update its routing table for routes of the same router group."
 
   routing_api.uri:
     description: "URL where the routing API can be reached internally"
@@ -67,4 +69,3 @@ properties:
   uaa.ca_cert:
     description : "Certificate authority for communication between clients and uaa."
     default: ""
-
