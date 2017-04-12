@@ -1,0 +1,19 @@
+- type: replace
+  path: /instance_groups/name=silly?
+  value:
+    name: silly
+    azs: 
+    - z1
+    instances: 1
+    stemcell: default
+    vm_type: m3.medium
+    networks:
+    - name: private  
+    jobs:
+    - name: router-consumer
+      release: routing
+  
+  
+  
+
+

@@ -1,0 +1,11 @@
+---
+name: router-consumer
+
+description: "Consumes a router link. Nom nom nom."
+
+templates:
+  file.txt.erb: file.txt
+
+consumes:
+- name: foo
+  type: http-router
