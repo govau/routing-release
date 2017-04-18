@@ -23,6 +23,7 @@ files:
   - routing-release/src/code.cloudfoundry.org/gorouter/common/uuid/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/config/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/handlers/*.go # gosub
+  - routing-release/src/code.cloudfoundry.org/gorouter/handlers/fakes/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/logger/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/logger/fakes/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/mbus/*.go # gosub
@@ -126,4 +127,5 @@ files:
   - routing-release/src/github.com/urfave/negroni/*.go # gosub
   - routing-release/src/github.com/vito/go-sse/sse/*.go # gosub
   - routing-release/src/golang.org/x/crypto/pbkdf2/*.go # gosub
+  - routing-release/src/golang.org/x/net/context/*.go # gosub
   - routing-release/src/gopkg.in/yaml.v2/*.go # gosub
