@@ -205,3 +205,20 @@ properties:
   uaa.ca_cert:
     description : "Certificate authority for communication between clients and uaa."
     default: ""
+
+  cf_networking.policy_server_hostname:
+    description: "Host name for the policy server.  E.g. the service advertised via Consul DNS.  Must match common name in the policy_server.server_cert"
+    default: "policy-server.service.cf.internal"
+
+  cf_networking.policy_server_internal_listen_port:
+    description: "Policy server handles requests from the vxlan policy agent on this port."
+    default: 4003
+
+  cf_networking.vxlan_policy_agent_ca_cert:
+    description: "Trusted CA certificate that was used to sign the policy server's server cert and key."
+
+  cf_networking.vxlan_policy_agent_client_cert:
+    description: "Client certificate for TLS to access policy server."
+
+  cf_networking.vxlan_policy_agent_client_key:
+    description: "Client private key for TLS to access policy server."

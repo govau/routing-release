@@ -1,0 +1,25 @@
+resources:
+- name: go-db-helpers
+  type: git
+  source:
+    uri: https://github.com/cloudfoundry-incubator/go-db-helpers
+    branch: master
+
+jobs:
+- name: helpers-test-postgres
+  plan:
+  - aggregate:
+    - get: go-db-helpers
+      trigger: true
+  - task: test-postgres
+    file: go-db-helpers/ci/test-postgres.yml
+    privileged: true
+
+- name: helpers-test-mysql
+  plan:
+  - aggregate:
+    - get: go-db-helpers
+      trigger: true
+  - task: test-mysql
+    file: go-db-helpers/ci/test-mysql.yml
+    privileged: true
