@@ -78,9 +78,9 @@ disable_keep_alives: true
 cf_networking:
   policy_server_hostname: <%= p("cf_networking.policy_server_hostname") %>
   policy_server_internal_listen_port: <%= p("cf_networking.policy_server_internal_listen_port") %>
-  vxlan_policy_agent_client_cert: <%= p("cf_networking.vxlan_policy_agent_client_cert") %>
-  vxlan_policy_agent_client_key: <%= p("cf_networking.vxlan_policy_agent_client_key") %>
-  vxlan_policy_agent_ca_cert: <%= p("cf_networking.vxlan_policy_agent_ca_cert") %>
+  vxlan_policy_agent_client_cert: "/var/vcap/jobs/gorouter/config/policy/vxlan_policy_agent_client_cert.crt"
+  vxlan_policy_agent_client_key: "/var/vcap/jobs/gorouter/config/policy/vxlan_policy_agent_client_key.key"
+  vxlan_policy_agent_ca_cert: "/var/vcap/jobs/gorouter/config/policy/vxlan_policy_agent_ca_cert.crt"
 
 oauth:
   token_endpoint: <%= p("uaa.token_endpoint") %>

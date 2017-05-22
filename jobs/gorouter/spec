@@ -15,7 +15,9 @@ templates:
   cert.pem.erb: config/cert.pem
   key.pem.erb: config/key.pem
   uaa_ca.crt.erb: config/certs/uaa/ca.crt
-
+  vxlan_policy_agent_ca_cert.crt.erb: config/policy/vxlan_policy_agent_ca_cert.crt
+  vxlan_policy_agent_client_key.key.erb: config/policy/vxlan_policy_agent_client_key.key
+  vxlan_policy_agent_client_cert.crt.erb: config/policy/vxlan_policy_agent_client_cert.crt
 packages:
   - routing_utils
   - gorouter
