@@ -8,6 +8,9 @@ files:
   - routing-release/src/code.cloudfoundry.org/gorouter/NOTICE
   - routing-release/src/code.cloudfoundry.org/clock/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/debugserver/*.go # gosub
+  - routing-release/src/code.cloudfoundry.org/go-db-helpers/json_client/*.go # gosub
+  - routing-release/src/code.cloudfoundry.org/go-db-helpers/marshal/*.go # gosub
+  - routing-release/src/code.cloudfoundry.org/go-db-helpers/mutualtls/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/access_log/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/access_log/fakes/*.go # gosub
@@ -29,6 +32,7 @@ files:
   - routing-release/src/code.cloudfoundry.org/gorouter/metrics/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/metrics/fakes/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/metrics/monitor/*.go # gosub
+  - routing-release/src/code.cloudfoundry.org/gorouter/networking_policy/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/proxy/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/proxy/handler/*.go # gosub
   - routing-release/src/code.cloudfoundry.org/gorouter/proxy/round_tripper/*.go # gosub

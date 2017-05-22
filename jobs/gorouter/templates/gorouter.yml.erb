@@ -75,6 +75,13 @@ max_idle_conns_per_host: 100
 disable_keep_alives: true
 <% end%>
 
+cf_networking:
+  policy_server_hostname: <%= p("cf_networking.policy_server_hostname") %>
+  policy_server_internal_listen_port: <%= p("cf_networking.policy_server_internal_listen_port") %>
+  vxlan_policy_agent_client_cert: <%= p("cf_networking.vxlan_policy_agent_client_cert") %>
+  vxlan_policy_agent_client_key: <%= p("cf_networking.vxlan_policy_agent_client_key") %>
+  vxlan_policy_agent_ca_cert: <%= p("cf_networking.vxlan_policy_agent_ca_cert") %>
+
 oauth:
   token_endpoint: <%= p("uaa.token_endpoint") %>
   client_name: "gorouter"
