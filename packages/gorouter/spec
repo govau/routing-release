@@ -82,6 +82,7 @@ files:
   - routing-release/src/github.com/cloudfoundry/dropsonde/runtime_stats/*.go # gosub
   - routing-release/src/github.com/cloudfoundry/sonde-go/events/*.go # gosub
   - routing-release/src/github.com/codegangsta/cli/*.go # gosub
+  - routing-release/src/github.com/coreos/go-iptables/iptables/*.go # gosub
   - routing-release/src/github.com/dgrijalva/jwt-go/*.go # gosub
   - routing-release/src/github.com/gogo/protobuf/gogoproto/*.go # gosub
   - routing-release/src/github.com/gogo/protobuf/proto/*.go # gosub
