@@ -56,7 +56,7 @@ case $1 in
 
     setcap cap_net_bind_service=+ep /var/vcap/packages/gorouter/bin/gorouter
 
-    chpst -u vcap:vcap /var/vcap/jobs/gorouter/bin/run_gorouter &
+    chpst /var/vcap/jobs/gorouter/bin/run_gorouter &
     ;;
 
   stop)
