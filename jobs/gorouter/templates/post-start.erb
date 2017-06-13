@@ -1,0 +1,9 @@
+#!/bin/bash
+
+<% total_sleep = p("router.load_balancer_healthy_threshold") %>
+<% lb_delay = p("router.requested_route_registration_interval_in_seconds") %>
+<% if lb_delay > total_sleep %>
+<%  total_sleep += (lb_delay - total_sleep) %>
+<% end %>
+
+sleep <%= total_sleep %>
