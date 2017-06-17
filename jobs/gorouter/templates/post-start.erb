@@ -1,9 +1,11 @@
 #!/bin/bash
 
-<% total_sleep = p("router.load_balancer_healthy_threshold") %>
-<% lb_delay = p("router.requested_route_registration_interval_in_seconds") %>
-<% if lb_delay > total_sleep %>
-<%  total_sleep += (lb_delay - total_sleep) %>
-<% end %>
+LOG_DIR=/var/vcap/sys/log/gorouter
+source /var/vcap/packages/routing_utils/syslog_utils.sh
+<% lb_delay = p("router.load_balancer_healthy_threshold") %>
 
-sleep <%= total_sleep %>
+tee_output_to_sys_log "${LOG_DIR}" "post-start"
+
+echo "Waiting <%= lb_delay %> seconds for gorouter to become ready..."
+sleep <%= lb_delay %>
+echo "Gorouter is ready."
