@@ -19,6 +19,11 @@ config = {
     skip_ssl_validation: p("acceptance_tests.skip_ssl_validation"),
     client_secret: p("tcp_emitter.oauth_secret"),
     port: 443,
+  },
+  xfcc: {
+    always_forward: p("acceptance_tests.xfcc.always_forward"),
+    forward: p("acceptance_tests.xfcc.forward"),
+    sanitize_set: p("acceptance_tests.xfcc.sanitize_set"),
   }
 }
 
